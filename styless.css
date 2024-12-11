@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f3; /* Warna lebih terang */
+    color: #444; /* Warna teks lebih kontras */
+    line-height: 1.8; /* Spasi lebih lebar */
+    padding: 0 15px;
+}
+
+/* Heading Style */
+h1 {
+    color: #1e2a38; /* Warna lebih gelap */
+    font-size: 2.5em; /* Ukuran sedikit lebih kecil */
+    text-align: center;
+    margin-bottom: 30px; /* Margin lebih besar */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Spasi antar huruf */
+}
+
+/* Main Container */
+.container {
+    max-width: 1100px; /* Lebar lebih kecil untuk kesan kompak */
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Shadow lebih intens */
+}
+
+/* Button Style */
+button {
+    display: inline-block;
+    padding: 12px 25px; /* Padding lebih besar */
+    background-color: #4caf50; /* Warna hijau */
+    color: #fff;
+    font-size: 1.1em; /* Ukuran font lebih besar */
+    border: none;
+    border-radius: 8px; /* Radius lebih besar */
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Warna hijau lebih gelap */
+    transform: translateY(-3px);
+}
+
+/* Link Style */
+a {
+    text-decoration: none;
+    color: #4caf50; /* Warna hijau */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #388e3c; /* Warna hijau lebih gelap */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spasi lebih besar */
+    margin-top: 25px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Radius lebih besar */
+    font-size: 1em;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #4caf50; /* Warna hijau */
+    outline: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+footer a {
+    color: #4caf50; /* Warna hijau */
+}
+
+footer a:hover {
+    color: #388e3c; /* Warna hijau lebih gelap */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    font-size: 1em;
+    color: #333;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #4caf50;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Ukuran lebih kecil untuk layar kecil */
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%; /* Tombol memenuhi layar */
+    }
+}
